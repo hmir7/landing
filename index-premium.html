@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Premium High-Tech Landing Page</title>
+    <meta name="description" content="Ультрасовременный лендинг премиум-класса">
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Стили -->
+    <link rel="stylesheet" href="styles-premium.css">
+</head>
+<body>
+
+    <!-- Фоновые элементы (Glow Effects) -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Навигация -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <!-- Место для логотипа: замените SVG на img с вашим лого -->
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="12" fill="url(#logo-gradient)"/>
+                    <path d="M20 10L30 25H10L20 10Z" fill="white" fill-opacity="0.8"/>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#7F5AF0"/>
+                            <stop offset="1" stop-color="#2CB67D"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>NEXUS</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#features" class="nav-link">Возможности</a></li>
+                <li><a href="#about" class="nav-link">О продукте</a></li>
+                <li><a href="#showcase" class="nav-link">Галерея</a></li>
+                <li><a href="#testimonials" class="nav-link">Отзывы</a></li>
+                <li><a href="#contact" class="btn-nav">Начать сейчас</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Секция -->
+    <header class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content hidden-element">
+                <div class="badge">Новое поколение технологий</div>
+                <h1>Будущее цифровых <br> <span class="gradient-text">решений здесь</span></h1>
+                <p class="hero-desc">
+                    Создавайте масштабируемые продукты с помощью нашей платформы следующего поколения. 
+                    Минимализм, скорость и безупречный дизайн в каждой строчке кода.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Попробовать бесплатно</a>
+                    <a href="#showcase" class="btn btn-secondary">Узнать больше</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual hidden-element" data-delay="200">
+                <!-- Placeholder для Hero изображения (Mockup) -->
+                <div class="img-wrapper parallax-layer" data-speed="0.05">
+                    <img src="https://placehold.co/800x500/1a1a2e/FFF?text=Product+Mockup+UI" alt="Dashboard Preview" class="hero-img">
+                    <div class="img-glow"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Секция -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header hidden-element">
+                <h2>Преимущества платформы</h2>
+                <p>Технологии, которые опережают время</p>
+            </div>
+            
+            <div class="grid-3">
+                <!-- Card 1 -->
+                <div class="card glass-card hidden-element">
+                    <div class="icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Молниеносная скорость</h3>
+                    <p>Оптимизированное ядро обеспечивает мгновенную загрузку и отклик интерфейса.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card glass-card hidden-element" data-delay="100">
+                    <div class="icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3>Безопасность данных</h3>
+                    <p>Шифрование военного уровня и полная защита вашей конфиденциальной информации.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card glass-card hidden-element" data-delay="200">
+                    <div class="icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Глобальный охват</h3>
+                    <p>Распределенная сеть серверов по всему миру для минимальной задержки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Секция -->
+    <section class="section about" id="about">
+        <div class="container about-container">
+            <div class="about-image hidden-element">
+                <img src="https://placehold.co/600x700/16162a/FFF?text=Team+Working" alt="Our Team" class="rounded-img">
+            </div>
+            <div class="about-content hidden-element" data-delay="200">
+                <h2>Переосмысление <br>рабочего процесса</h2>
+                <p>
+                    Мы создали экосистему, которая объединяет творчество и технологии. 
+                    Наш подход основан на глубоком анализе пользовательского опыта и современных трендах дизайна.
+                </p>
+                <ul class="check-list">
+                    <li>Интуитивно понятный интерфейс</li>
+                    <li>Полная интеграция с любимыми инструментами</li>
+                    <li>Поддержка 24/7 от экспертов индустрии</li>
+                </ul>
+                <a href="#" class="link-arrow">Читать историю компании &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Секция -->
+    <section class="section showcase" id="showcase">
+        <div class="container">
+            <div class="section-header hidden-element">
+                <h2>Галерея возможностей</h2>
+                <p>Взгляните на интерфейс изнутри</p>
+            </div>
+            
+            <div class="showcase-grid">
+                <div class="showcase-item large hidden-element">
+                    <img src="https://placehold.co/800x500/1f1f3a/FFF?text=Analytics+Dashboard" alt="Analytics">
+                </div>
+                <div class="showcase-item hidden-element" data-delay="100">
+                    <img src="https://placehold.co/400x500/1f1f3a/FFF?text=Mobile+App" alt="Mobile">
+                </div>
+                <div class="showcase-item hidden-element" data-delay="200">
+                    <img src="https://placehold.co/400x500/1f1f3a/FFF?text=Settings+Panel" alt="Settings">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Секция -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header hidden-element">
+                <h2>Доверие лидеров</h2>
+                <p>Что говорят наши клиенты</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card testimonial-card glass-card hidden-element">
+                    <div class="stars">★★★★★</div>
+                    <p>"Лучшее решение на рынке. Интерфейс просто космос, а поддержка отвечает быстрее света."</p>
+                    <div class="author">
+                        <img src="https://placehold.co/50x50/333/FFF?text=A" alt="Avatar">
+                        <div>
+                            <h4>Алексей Петров</h4>
+                            <span>CEO, TechStart</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card glass-card hidden-element" data-delay="100">
+                    <div class="stars">★★★★★</div>
+                    <p>"Внедрение заняло всего два дня. Производительность выросла на 40% в первую неделю."</p>
+                    <div class="author">
+                        <img src="https://placehold.co/50x50/333/FFF?text=M" alt="Avatar">
+                        <div>
+                            <h4>Мария Иванова</h4>
+                            <span>CTO, InnovateCorp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card glass-card hidden-element" data-delay="200">
+                    <div class="stars">★★★★★</div>
+                    <p>"Дизайн системы вдохновляет нашу команду работать лучше. Это не просто инструмент, это искусство."</p>
+                    <div class="author">
+                        <img src="https://placehold.co/50x50/333/FFF?text=D" alt="Avatar">
+                        <div>
+                            <h4>Дмитрий Соколов</h4>
+                            <span>Product Lead, FutureLab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Секция -->
+    <section class="section cta-section" id="contact">
+        <div class="container">
+            <div class="cta-box glass-card hidden-element">
+                <h2>Готовы начать трансформацию?</h2>
+                <p>Присоединяйтесь к тысячам компаний, которые уже выбрали будущее.</p>
+                <form class="cta-form" onsubmit="event.preventDefault(); alert('Спасибо! Мы свяжемся с вами.');">
+                    <input type="email" placeholder="Ваш email адрес" required>
+                    <button type="submit" class="btn btn-primary">Получить доступ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo">NEXUS</a>
+                <p>Создаем цифровое будущее сегодня.</p>
+                <div class="socials">
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Продукт</h4>
+                <a href="#">Функции</a>
+                <a href="#">Цены</a>
+                <a href="#">API</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Компания</h4>
+                <a href="#">О нас</a>
+                <a href="#">Карьера</a>
+                <a href="#">Блог</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Поддержка</h4>
+                <a href="#">Документация</a>
+                <a href="#">Статус</a>
+                <a href="#">Контакты</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Nexus Inc. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="script-premium.js"></script>
+</body>
+</html>
