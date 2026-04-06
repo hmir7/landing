@@ -4,8 +4,6 @@
 __pycache__/
 *.o
 *.obj
-dist/
-build/
 *.class
 *.exe
 *.dll
@@ -21,29 +19,39 @@ venv/
 .env.local
 .env.*
 
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-*.swo
+# Build directories
+dist/
+build/
+target/
+*.jar
+*.war
+*.zip
+*.tar.gz
 
-# Editors
+# Editors and IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
+*.tmp
 
 # System files
 .DS_Store
 Thumbs.db
+*.log
 
-# Coverage
+# Coverage and testing
 coverage/
 htmlcov/
 .coverage
+*.coverage
+.mypy_cache/
+.pytest_cache/
+
+# Gradle
+.gradle/
 
 # Compressed files
-*.zip
 *.gz
 *.tar
 *.tgz
@@ -61,8 +69,4 @@ htmlcov/
 *.Z
 *.lz
 *.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
 ```

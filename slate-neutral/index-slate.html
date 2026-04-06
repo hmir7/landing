@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlateCorp | Корпоративные решения нового поколения</title>
+    <meta name="description" content="Профессиональная платформа для управления бизнес-процессами">
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Стили -->
+    <link rel="stylesheet" href="styles-slate.css">
+</head>
+<body>
+
+    <!-- Фоновые элементы (Glow Effects) -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Навигация -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <!-- Логотип в корпоративном стиле -->
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="url(#logo-gradient-slate)"/>
+                    <path d="M20 8L32 28H8L20 8Z" fill="white" fill-opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="logo-gradient-slate" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#60A5FA"/>
+                            <stop offset="1" stop-color="#3B82F6"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>SlateCorp</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#features" class="nav-link">Возможности</a></li>
+                <li><a href="#about" class="nav-link">О компании</a></li>
+                <li><a href="#solutions" class="nav-link">Решения</a></li>
+                <li><a href="#testimonials" class="nav-link">Клиенты</a></li>
+                <li><a href="#contact" class="btn-nav">Заказать демо</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Секция -->
+    <header class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content hidden-element">
+                <div class="badge">Для предприятий и корпораций</div>
+                <h1>Управляйте бизнесом <br> <span class="gradient-text">с максимальной эффективностью</span></h1>
+                <p class="hero-desc">
+                    Комплексная платформа для автоматизации бизнес-процессов. 
+                    Надёжность, безопасность и масштабируемость для компаний любого размера.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Начать бесплатно</a>
+                    <a href="#solutions" class="btn btn-secondary">Узнать больше</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual hidden-element" data-delay="200">
+                <!-- Placeholder для Hero изображения (Dashboard Mockup) -->
+                <div class="img-wrapper parallax-layer" data-speed="0.05">
+                    <img src="https://placehold.co/800x500/1F2933/E5E7EB?text=Corporate+Dashboard" alt="Dashboard Preview" class="hero-img">
+                    <div class="img-glow"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Секция -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header hidden-element">
+                <h2>Преимущества платформы</h2>
+                <p>Технологии, которые работают на ваш бизнес</p>
+            </div>
+            
+            <div class="grid-3">
+                <!-- Card 1 -->
+                <div class="card hidden-element">
+                    <div class="icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Высокая производительность</h3>
+                    <p>Оптимизированная архитектура обеспечивает быструю обработку данных и мгновенный отклик системы.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card hidden-element" data-delay="100">
+                    <div class="icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3>Корпоративная безопасность</h3>
+                    <p>Многоуровневая защита данных, соответствие стандартам GDPR и SOC 2 Type II.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card hidden-element" data-delay="200">
+                    <div class="icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Глобальная инфраструктура</h3>
+                    <p>Распределённые дата-центры по всему миру гарантируют доступность 99.9% времени.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Секция -->
+    <section class="section about" id="about">
+        <div class="container about-container">
+            <div class="about-image hidden-element">
+                <img src="https://placehold.co/600x700/1F2933/E5E7EB?text=Office+Environment" alt="Our Office" class="rounded-img">
+            </div>
+            <div class="about-content hidden-element" data-delay="200">
+                <h2>Современный подход <br>к управлению компанией</h2>
+                <p>
+                    SlateCorp — это экосистема инструментов для эффективного ведения бизнеса. 
+                    Мы объединяем передовые технологии с глубоким пониманием потребностей современных компаний.
+                </p>
+                <ul class="check-list">
+                    <li>Единая панель управления всеми процессами</li>
+                    <li>Интеграция с более чем 200 бизнес-приложениями</li>
+                    <li>Персональная поддержка от выделенной команды</li>
+                </ul>
+                <a href="#" class="link-arrow">Узнать о нашей миссии &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions/Showcase Секция -->
+    <section class="section showcase" id="solutions">
+        <div class="container">
+            <div class="section-header hidden-element">
+                <h2>Решения для вашего бизнеса</h2>
+                <p>Полный набор инструментов для роста компании</p>
+            </div>
+            
+            <div class="showcase-grid">
+                <div class="showcase-item large hidden-element">
+                    <img src="https://placehold.co/800x500/1F2933/E5E7EB?text=Analytics+Platform" alt="Analytics">
+                </div>
+                <div class="showcase-item hidden-element" data-delay="100">
+                    <img src="https://placehold.co/400x500/1F2933/E5E7EB?text=Mobile+App" alt="Mobile">
+                </div>
+                <div class="showcase-item hidden-element" data-delay="200">
+                    <img src="https://placehold.co/400x500/1F2933/E5E7EB?text=Reports" alt="Reports">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Секция -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header hidden-element">
+                <h2>Нам доверяют лидеры рынка</h2>
+                <p>Истории успеха наших клиентов</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card testimonial-card hidden-element">
+                    <div class="stars">★★★★★</div>
+                    <p>"Внедрение SlateCorp позволило нам сократить операционные расходы на 35% уже в первый квартал."</p>
+                    <div class="author">
+                        <img src="https://placehold.co/50x50/374151/E5E7EB?text=A" alt="Avatar">
+                        <div>
+                            <h4>Александр Волков</h4>
+                            <span>Генеральный директор, TechVentures</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card hidden-element" data-delay="100">
+                    <div class="stars">★★★★★</div>
+                    <p>"Лучшее решение для управления распределённой командой. Интерфейс интуитивный, поддержка оперативная."</p>
+                    <div class="author">
+                        <img src="https://placehold.co/50x50/374151/E5E7EB?text=E" alt="Avatar">
+                        <div>
+                            <h4>Елена Морозова</h4>
+                            <span>Директор по операциям, GlobalTrade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card hidden-element" data-delay="200">
+                    <div class="stars">★★★★★</div>
+                    <p>"Безопасность и надёжность были нашими приоритетами. SlateCorp превзошёл все ожидания."</p>
+                    <div class="author">
+                        <img src="https://placehold.co/50x50/374151/E5E7EB?text=M" alt="Avatar">
+                        <div>
+                            <h4>Михаил Орлов</h4>
+                            <span>CTO, FinanceGroup</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Секция -->
+    <section class="section cta-section" id="contact">
+        <div class="container">
+            <div class="cta-box hidden-element">
+                <h2>Готовы оптимизировать свой бизнес?</h2>
+                <p>Присоединяйтесь к более чем 5000 компаний, использующих SlateCorp.</p>
+                <form class="cta-form" onsubmit="event.preventDefault(); alert('Спасибо! Наш менеджер свяжется с вами в ближайшее время.');">
+                    <input type="email" placeholder="Ваш рабочий email" required>
+                    <button type="submit" class="btn btn-primary">Запланировать демонстрацию</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo">SlateCorp</a>
+                <p>Профессиональные решения для современного бизнеса.</p>
+                <div class="socials">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Продукт</h4>
+                <a href="#">Функционал</a>
+                <a href="#">Тарифы</a>
+                <a href="#">Интеграции</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Компания</h4>
+                <a href="#">О нас</a>
+                <a href="#">Карьера</a>
+                <a href="#">Пресс-центр</a>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Ресурсы</h4>
+                <a href="#">Документация</a>
+                <a href="#">База знаний</a>
+                <a href="#">Поддержка</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 SlateCorp Inc. Все права защищены. Политика конфиденциальности.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="script-slate.js"></script>
+</body>
+</html>
