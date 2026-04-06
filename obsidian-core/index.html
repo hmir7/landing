@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian Core - Платформа будущего для вашего бизнеса</title>
+    <meta name="description" content="Инновационная платформа для автоматизации бизнес-процессов нового поколения">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="10" fill="url(#logo-gradient)"/>
+                    <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#22D3EE"/>
+                            <stop offset="1" stop-color="#06B6D4"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Obsidian</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#features" class="nav-link">Возможности</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#showcase" class="nav-link">Примеры</a>
+                <a href="#testimonials" class="nav-link">Отзывы</a>
+                <a href="#contact" class="nav-link btn-nav">Начать бесплатно</a>
+            </div>
+            
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+            <div class="glow glow-3"></div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">🚀 Новая версия 2.0 уже доступна</div>
+                <h1 class="hero-title">
+                    Автоматизируйте бизнес <br>
+                    <span class="gradient-text">без ограничений</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Lumina — это интеллектуальная платформа, которая объединяет все ваши рабочие процессы в единую экосистему. 
+                    Увеличьте продуктивность команды на 300% уже в первый месяц.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        Попробовать бесплатно
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#showcase" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 7L13 10L8 13V7Z" fill="currentColor"/>
+                        </svg>
+                        Смотреть демо
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">компаний</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">uptime</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">поддержка</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image" id="parallax-image">
+                <div class="image-card">
+                    <img src="https://placehold.co/600x400/f3f4f6/6366f1?text=Dashboard+Preview" alt="Интерфейс платформы Lumina" class="parallax-img">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="floating-card card-1">
+                    <div class="icon-box green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 4L12 14.01L9 11.01" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="float-content">
+                        <span class="float-title">Задача выполнена</span>
+                        <span class="float-subtitle">just now</span>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="icon-box purple">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11684 19.0078 7.005C19.0078 7.89316 18.7122 8.75608 18.1676 9.45768C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="float-content">
+                        <span class="float-title">+24 участника</span>
+                        <span class="float-subtitle">в этом месяце</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-purple">Возможности</span>
+                <h2>Всё необходимое для роста вашего бизнеса</h2>
+                <p>Мощные инструменты, которые помогают командам работать эффективнее и достигать лучших результатов</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card hidden">
+                    <div class="feature-icon blue">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2V30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 16H30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Аналитика в реальном времени</h3>
+                    <p>Получайте детальную статистику по всем показателям вашего бизнеса. Принимайте решения на основе данных, а не догадок.</p>
+                    <a href="#" class="feature-link">
+                        Узнать больше
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="feature-card hidden">
+                    <div class="feature-icon purple">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="4" width="24" height="24" rx="6" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M10 16H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M10 20H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Умная автоматизация</h3>
+                    <p>Настройте автоматические сценарии для рутинных задач. Освободите время команды для действительно важных проектов.</p>
+                    <a href="#" class="feature-link">
+                        Узнать больше
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="feature-card hidden">
+                    <div class="feature-icon green">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L20 8L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 12L20 16L16 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16L16 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 12L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 16L12 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Безопасность предприятия</h3>
+                    <p>Защита данных уровня enterprise. Шифрование, двухфакторная аутентификация и соответствие международным стандартам.</p>
+                    <a href="#" class="feature-link">
+                        Узнать больше
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="feature-card hidden">
+                    <div class="feature-icon orange">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 8V16L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Интеграции без границ</h3>
+                    <p>Подключайте любимые сервисы за несколько кликов. Более 500 готовых интеграций с популярными платформами.</p>
+                    <a href="#" class="feature-link">
+                        Узнать больше
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="feature-card hidden">
+                    <div class="feature-icon pink">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4C10.477 4 6 8.477 6 14C6 20.5 4 28 4 28C4 28 10.5 26 16 26C21.523 26 26 21.523 26 16C26 10.477 21.523 6 16 6V4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="16" cy="14" r="4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Глобальная поддержка</h3>
+                    <p>Наша команда экспертов готова помочь 24/7. Персональный менеджер для каждого корпоративного клиента.</p>
+                    <a href="#" class="feature-link">
+                        Узнать больше
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="feature-card hidden">
+                    <div class="feature-icon cyan">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 7L12 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 12L8 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M28 17L4 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 22L8 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 27L12 27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Масштабируемость</h3>
+                    <p>Растите без ограничений. Наша инфраструктура автоматически масштабируется под ваши потребности.</p>
+                    <a href="#" class="feature-link">
+                        Узнать больше
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-image hidden">
+                <img src="https://placehold.co/600x700/eef2ff/6366f1?text=Team+Working" alt="Команда Lumina за работой">
+                <div class="about-badge">
+                    <span class="badge-number">5+</span>
+                    <span class="badge-text">лет на рынке</span>
+                </div>
+            </div>
+            
+            <div class="about-content hidden">
+                <span class="badge badge-blue">О компании</span>
+                <h2>Мы создаём технологии, которые меняют правила игры</h2>
+                <p class="about-text">
+                    Lumina началась с простой идеи: сделать мощные инструменты автоматизации доступными для компаний любого размера. 
+                    Сегодня мы обслуживаем более 10 000 клиентов по всему миру.
+                </p>
+                <p class="about-text">
+                    Наша миссия — освободить людей от рутины, чтобы они могли сосредоточиться на творчестве, стратегии и развитии. 
+                    Мы верим, что технологии должны служить людям, а не наоборот.
+                </p>
+                
+                <div class="about-list">
+                    <div class="about-item">
+                        <div class="check-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Сертифицировано по ISO 27001</span>
+                    </div>
+                    <div class="about-item">
+                        <div class="check-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Соответствие GDPR и CCPA</span>
+                    </div>
+                    <div class="about-item">
+                        <div class="check-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>99.9% uptime гарантировано</span>
+                    </div>
+                    <div class="about-item">
+                        <div class="check-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Поддержка 24/7 на 15 языках</span>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="btn btn-primary">Узнать больше о нас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase" id="showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-green">Примеры использования</span>
+                <h2>Увидьте Lumina в действии</h2>
+                <p>Посмотрите, как наши клиенты используют платформу для решения своих задач</p>
+            </div>
+            
+            <div class="showcase-grid">
+                <div class="showcase-item hidden">
+                    <img src="https://placehold.co/400x300/f3f4f6/6366f1?text=Analytics+Dashboard" alt="Панель аналитики" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h4>Панель аналитики</h4>
+                        <p>Мониторинг ключевых показателей в реальном времени</p>
+                    </div>
+                </div>
+                
+                <div class="showcase-item hidden">
+                    <img src="https://placehold.co/400x300/f3f4f6/8b5cf6?text=Project+Management" alt="Управление проектами" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h4>Управление проектами</h4>
+                        <p>Координация команд и отслеживание прогресса</p>
+                    </div>
+                </div>
+                
+                <div class="showcase-item hidden">
+                    <img src="https://placehold.co/400x300/f3f4f6/10b981?text=Automation+Flows" alt="Автоматизация процессов" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h4>Автоматизация процессов</h4>
+                        <p>Визуальный конструктор рабочих потоков</p>
+                    </div>
+                </div>
+                
+                <div class="showcase-item hidden">
+                    <img src="https://placehold.co/400x300/f3f4f6/f59e0b?text=Team+Collaboration" alt="Командная работа" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h4>Командная работа</h4>
+                        <p>Обмен файлами, комментарии и уведомления</p>
+                    </div>
+                </div>
+                
+                <div class="showcase-item hidden">
+                    <img src="https://placehold.co/400x300/f3f4f6/ec4899?text=Reports+%26+Export" alt="Отчёты и экспорт" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h4>Отчёты и экспорт</h4>
+                        <p>Генерация отчётов в различных форматах</p>
+                    </div>
+                </div>
+                
+                <div class="showcase-item hidden">
+                    <img src="https://placehold.co/400x300/f3f4f6/06b6d4?text=Mobile+App" alt="Мобильное приложение" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h4>Мобильное приложение</h4>
+                        <p>Доступ к платформе с любого устройства</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-pink">Отзывы</span>
+                <h2>Что говорят наши клиенты</h2>
+                <p>Тысячи компаний уже доверяют Lumina свои бизнес-процессы</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card hidden">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        «Lumina полностью изменила наш подход к управлению проектами. Мы сократили время на совещания на 40% 
+                        и увеличили скорость выполнения задач в два раза. Это лучшая инвестиция, которую мы сделали.»
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/48x48/e5e7eb/6b7280?text=AK" alt="Анна Ковалёва" loading="lazy">
+                        <div class="author-info">
+                            <span class="author-name">Анна Ковалёва</span>
+                            <span class="author-role">CEO, TechStart</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card hidden">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        «Интеграция с нашими существующими инструментами прошла безупречно. Поддержка ответила на все вопросы 
+                        в течение часа. Профессионализм команды впечатляет.»
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/48x48/e5e7eb/6b7280?text=МП" alt="Михаил Петров" loading="lazy">
+                        <div class="author-info">
+                            <span class="author-name">Михаил Петров</span>
+                            <span class="author-role">CTO, DataFlow</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card hidden">
+                    <div class="testimonial-rating">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24">
+                            <path d="M10 1L12.39 6.26L18.18 6.89L13.82 10.86L15.09 16.61L10 13.27L4.91 16.61L6.18 10.86L1.82 6.89L7.61 6.26L10 1Z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        «ROI от внедрения Lumina превысил наши ожидания уже через 3 месяца. Автоматизация рутинных задач 
+                        позволила команде сосредоточиться на стратегическом развитии.»
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/48x48/e5e7eb/6b7280?text=ЕС" alt="Елена Смирнова" loading="lazy">
+                        <div class="author-info">
+                            <span class="author-name">Елена Смирнова</span>
+                            <span class="author-role">COO, InnovateLab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2>Готовы трансформировать свой бизнес?</h2>
+                <p>Присоединяйтесь к тысячам компаний, которые уже используют Lumina для достижения лучших результатов.</p>
+                
+                <form class="cta-form" id="cta-form">
+                    <input type="email" placeholder="Введите ваш email" required class="form-input">
+                    <button type="submit" class="btn btn-primary">
+                        Начать бесплатно
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+                
+                <p class="form-note">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1.333C4.318 1.333 1.333 4.318 1.333 8C1.333 11.682 4.318 14.667 8 14.667C11.682 14.667 14.667 11.682 14.667 8C14.667 4.318 11.682 1.333 8 1.333ZM7.333 11.333V6.667H8.667V11.333H7.333ZM7.333 5.333V4H8.667V5.333H7.333Z" fill="currentColor"/>
+                    </svg>
+                    14 дней бесплатного пробного периода. Карта не требуется.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="10" fill="url(#footer-logo-gradient)"/>
+                            <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="footer-logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#22D3EE"/>
+                                    <stop offset="1" stop-color="#06B6D4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Obsidian</span>
+                    </a>
+                    <p>Интеллектуальная платформа для автоматизации бизнес-процессов нового поколения.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M20 10.23C20 4.58 15.56 0 10.07 0S0.14 4.58 0.14 10.23c0 5.1 3.66 9.33 8.44 10.1v-7.1H6.06v-3h2.52V8.07c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23 0.2 2.23 0.2v2.47h-1.26c-1.24 0-1.63 0.77-1.63 1.56v1.83h2.78l-0.44 3h-2.34v7.1c4.78-0.77 8.44-5 8.44-10.1z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 17.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M20 18v-8.38c0-3.4-1.82-4.98-4.25-4.98-1.96 0-2.83 1.08-3.33 1.83V4.67H8.5v13.33h3.92v-6.25c0-1.64.31-3.23 2.35-3.23 2.02 0 2.04 1.89 2.04 3.34v6.14zM5.34 2.88C4.17 2.88 3.22 3.83 3.22 5s.95 2.12 2.12 2.12 2.12-.95 2.12-2.12-.95-2.12-2.12-2.12zM7.34 18H3.34V6.67h4v11.33z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C4.48 0 0 4.48 0 10c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2.18 1.02-2.97-.1-.25-.44-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.54 1.35.2 2.39.1 2.64.65.79 1.02 1.86 1.02 2.97 0 3.88-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V19c0 .27.16.59.67.5C17.14 18.16 20 14.42 20 10 20 4.48 15.52 0 10 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Продукт</h4>
+                        <a href="#">Возможности</a>
+                        <a href="#">Цены</a>
+                        <a href="#">Интеграции</a>
+                        <a href="#">API</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Компания</h4>
+                        <a href="#">О нас</a>
+                        <a href="#">Карьера</a>
+                        <a href="#">Блог</a>
+                        <a href="#">Пресса</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Ресурсы</h4>
+                        <a href="#">Документация</a>
+                        <a href="#">Руководства</a>
+                        <a href="#">Вебинары</a>
+                        <a href="#">Статус</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Поддержка</h4>
+                        <a href="#">Центр помощи</a>
+                        <a href="#">Контакты</a>
+                        <a href="#">Сообщество</a>
+                        <a href="#">Партнёры</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lumina Inc. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">Cookie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
