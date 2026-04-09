@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Evan Stefanus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">About Me</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <main class="container">
+        <section class="contact-header">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">
+                Feel free to reach out if you'd like to collaborate or just want to say hi.
+            </p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-info">
+                <h2 class="section-title">Contact Information</h2>
+                
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:evan@example.com" class="contact-value">evan@example.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-label">Location</span>
+                    <span class="contact-value">Bangka Belitung, Indonesia</span>
+                </div>
+
+                <div class="social-links">
+                    <h3 class="social-title">Connect with me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/evanstef" class="social-link" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://linkedin.com/in/evanstefanus" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://twitter.com/evanstefanus" class="social-link" target="_blank" rel="noopener">Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" action="#" method="POST">
+                <h2 class="section-title">Send a Message</h2>
+                
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" rows="5" class="form-textarea" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message →</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Evan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
